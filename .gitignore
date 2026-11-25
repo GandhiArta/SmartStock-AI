@@ -1,37 +1,80 @@
-# Python
+
+# ==========================================
+# PYTHON
+# ==========================================
 __pycache__/
 *.py[cod]
 .pytest_cache/
 .mypy_cache/
 
-# Virtual environment
+# ==========================================
+# VIRTUAL ENVIRONMENT
+# ==========================================
 venv/
 .venv/
 env/
 
-# Secrets
+# ==========================================
+# SECRETS
+# ==========================================
 .env
 .env.*
 !.env.example
 
-# Editor and OS
+# ==========================================
+# EDITOR AND OPERATING SYSTEM
+# ==========================================
 .vscode/
 .idea/
 .DS_Store
 Thumbs.db
 
-# Logs and temporary files
+# ==========================================
+# LOGS AND TEMPORARY FILES
+# ==========================================
 *.log
 *.tmp
 *.bak
+*_backup.*
 
-# Training outputs
-runs/
-wandb/
+# ==========================================
+# V1 ARTIFACTS AND CODE
+# ==========================================
+/artifacts/
+/backend/main.py
+/backend/features.py
+/train_model.py
 
-# Backups and test results
-artifacts_backup_v1/
+# ==========================================
+# V3 EXPERIMENTS
+# ==========================================
+/artifacts_v3/
+/artifacts_v3_1/
+/artifacts_v3_2/
+/artifacts_v3_3/
+/backend/features_v3.py
+/train_model_v3.py
+/train_model_v3_1.py
+/train_model_v3_2.py
+/analyze_residuals_v3_3.py
+
+# ==========================================
+# ANALYSIS AND EXPERIMENTS
+# ==========================================
+/analysis_v2/
+/plots_v2/
+/analyze_v2_errors.py
+/deep_dive_v2.py
+/evaluate_model_v2.py
+/plot_evaluation_v2.py
+/evaluation_results_v2.json
+
+# ==========================================
+# BACKUPS AND TEMPORARY REQUESTS
+# ==========================================
+/artifacts_backup_v1/
 index_backup.html
 request_*.json
 hasil_recalculate.json
-*_backup.*
+README_PERUBAHAN.md
+/dataset/retail_store_inventory.csv
